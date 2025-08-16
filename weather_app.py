@@ -11,9 +11,9 @@ class WeatherApp(QWidget):
         self.city_label = QLabel("Enter city name: ", self)
         self.city_input = QLineEdit(self)
         self.get_weather_button = QPushButton("Get Weather", self)
-        self.temperature_label = QLabel("31°C", self)
-        self.emoji_label = QLabel("☀️")
-        self.description_label = QLabel("Sunny", self)
+        self.temperature_label = QLabel(self)
+        self.emoji_label = QLabel(self)
+        self.description_label = QLabel(self)
         self.init_ui()
 
     def init_ui(self):
@@ -68,8 +68,18 @@ class WeatherApp(QWidget):
             QLabel#description_label{
                 font-size: 50px;
             }
-            
         """)
+
+        self.get_weather_button.clicked.connect(self.get_weather)
+
+    def get_weather(self):
+        print("You get the weather")
+
+    def display_error(self, message):
+        pass
+
+    def display_weather(self, data):
+        pass
 
 
 if __name__ == '__main__':
