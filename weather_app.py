@@ -51,6 +51,24 @@ class WeatherApp(QWidget):
                 font-size: 40px;
                 font-style: italic;
             }
+            QLineEdit#city_input{
+                font-size: 40px;
+            }
+            QPushButton#get_weather_button{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            QLabel#temperature_label{
+                font-size: 75px;
+            }
+            QLabel#emoji_label{
+                font-size: 100px;
+                font-family: Segoe UI emoji;
+            }
+            QLabel#description_label{
+                font-size: 50px;
+            }
+            
         """)
 
 
