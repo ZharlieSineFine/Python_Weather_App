@@ -43,6 +43,15 @@ class WeatherApp(QWidget):
         self.emoji_label.setObjectName("emoji_label")
         self.description_label.setObjectName("description_label")
 
+        self.setStyleSheet("""
+            QLabel, QPushButton{
+                font-family: calibri
+            }
+            QLabel#city_label{
+                font-size: 40px
+            }
+        """)
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
