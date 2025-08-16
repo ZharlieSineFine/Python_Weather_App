@@ -45,10 +45,11 @@ class WeatherApp(QWidget):
 
         self.setStyleSheet("""
             QLabel, QPushButton{
-                font-family: calibri
+                font-family: calibri;
             }
             QLabel#city_label{
-                font-size: 40px
+                font-size: 40px;
+                font-style: italic;
             }
         """)
 
